@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: hsl(30, 38%, 92%);
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 1rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: hsl(0, 0%, 100%);
+    padding: 0rem 0rem .5rem 0rem;
+    width: 80%;
+    border-radius: 1.5rem;
+}
+
+.img {
+    width: 100%;
+    border-radius: 1.5rem 1.5rem 0rem 0rem;
+}
+
+.dekstop {
+    display: none;
+}
+
+.text {
+    padding: 1rem;
+}
+
+h1 {
+    font-size: 1rem;
+    color: hsl(228, 12%, 48%);
+    padding: 0rem 0rem .5rem 0rem;
+}
+
+h2 {
+    padding: 0rem 0rem .5rem 0rem;
+    color: hsl(212, 21%, 14%);
+    font-size: 2rem;
+}
+
+p {
+    padding: 0rem 0rem 1.3rem 0rem;
+    color: hsl(228, 12%, 48%);
+}
+
+.price {
+    padding: 0rem 0rem .5rem 0rem;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.discount {
+    color: hsl(158, 36%, 37%);
+    font-size: 2.5rem;
+}
+
+.original {
+    color: hsl(158, 36%, 37%);
+    text-decoration: line-through;
+}
+
+.btn {
+    width: 100%;
+    padding: .6rem;
+    border-radius: 1rem;
+    border-style: none;
+    background-color: hsl(158, 36%, 37%);
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: greenyellow;
+}
+
+.chart {
+    width: 4%;
+}
+
+.text-btn {
+    color:hsl(0, 0%, 100%);
+    font-weight: 800;
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        flex-direction: row;
+        padding: 0rem;
+        gap: 1rem;
+        width: 50%;
+    }
+    .img {
+        display: none;
+    }
+    .dekstop {
+        display: block;
+        width: 50%;
+        border-radius: 1.5rem 0rem 0rem 1.5rem;
+    }
+
+    h1 {
+        position: absolute;
+        top: 8rem;
+    }
+
+    p {
+        padding: rem 0rem 2rem 0rem;
+    }
+
+    .btn {
+        position: absolute;
+        width: 20%;
+        bottom: 8rem;
+    }
+}
